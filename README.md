@@ -1,10 +1,9 @@
-![Omakai logo](./omakai-logo.svg)
-
-# Omakai
-
-Local-first AI development framework for shipping AI apps with strong defaults.
-
-https://omakai.org
+<p align="center">
+  <img src="./omakai-logo.svg" alt="Omakai logo" width="120" />
+</p>
+<h1 align="center">Omakai</h1>
+<p align="center">Local-first AI development framework for shipping AI apps with strong defaults.</p>
+<p align="center"><a href="https://omakai.org">omakai.org</a></p>
 
 ## Overview
 Omakai is a local-first AI development framework that scaffolds, trains, tests, and packages applications with a cohesive toolchain. It helps teams move from idea to a shippable app without assembling a large stack.
