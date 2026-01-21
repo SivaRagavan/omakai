@@ -2,7 +2,7 @@
   <img src="./omakai-logo.svg" alt="Omakai logo" width="120" />
 </p>
 <h1 align="center">Omakai</h1>
-<p align="center">Local-first AI development framework for shipping AI apps with strong defaults.</p>
+<p align="center">Local-first AI development framework for shipping AI apps.</p>
 <p align="center"><a href="https://omakai.org">omakai.org</a></p>
 
 ## Overview
@@ -27,6 +27,6 @@ Omakai is a local-first AI development framework that scaffolds, trains, tests, 
 - Customize UI and ship the release bundle.
 
 ## What ships
-- Local-first runtime with no API keys by default.
+- Local-first runtime (no external systems, no API keys needed).
 - End-to-end local stack for chat with a custom model.
 - Release bundle that can be run, tested, and distributed.
