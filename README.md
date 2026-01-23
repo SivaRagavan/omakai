@@ -2,28 +2,29 @@
   <img src="./omakai-logo.svg" alt="Omakai logo" width="120" />
 </p>
 <h1 align="center">Omakai</h1>
-<p align="center">Local-first AI development framework for shipping AI apps.</p>
+<p align="center">Local-first AI development framework for shipping AI assistants.</p>
 <p align="center"><a href="https://omakai.org">omakai.org</a></p>
 
 ## Overview
-Omakai is a local-first AI development framework that scaffolds, trains, tests, and packages applications with a cohesive toolchain. It helps teams move from idea to a shippable app without assembling a large stack.
+Omakai is a local-first AI development framework that scaffolds, finetunes, tests, and packages AI assistants with a cohesive toolchain. It helps teams move from idea to a shippable AI without assembling a large stack.
 
 ## Key capabilities
 - Project scaffolding for data, configs, tests, and UI surfaces.
 - Data connectors for files, repos, and URLs.
 - Training recipes that produce repeatable release bundles.
-- Built-in testing to gate releases.
+- Built-in testing via `omakai test` to run evals and gate releases.
 - UI templates for AI interaction surfaces (CSS, Tailwind, or custom styling).
 - Skill packs for common capabilities.
 - Built-in coding assistant via `omakai code`.
 - Release bundles with profiles and checksums.
 
 ## Typical workflow
-- Run `omakai new` to scaffold a project.
+- Run `omakai new` to scaffold a project through a wizard that sets AI parameters (name, languages, knowledge bases, tools, and chat/voice format).
+- Use `omakai code` as the default way to build the AI with a coding agent.
 - Add data through connectors.
 - Enable skill packs.
-- Run `omakai train` to build a local release bundle.
-- Use `omakai code` to iterate on the project.
+- Run `omakai build` to build a local release bundle.
+- Run `omakai start` to start the AI runtime.
 - Customize UI and ship the release bundle.
 
 ## What ships
