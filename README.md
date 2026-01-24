@@ -8,6 +8,24 @@
 ## Overview
 Omakai is a local-first AI development framework that scaffolds, finetunes, tests, and packages AI assistants with a cohesive toolchain. It helps teams move from idea to a shippable AI without assembling a large stack.
 
+## Tech stack (Elixir)
+The stack is centered on Elixir/Erlang (OTP) for concurrency, distribution, and reliability.
+
+Potential ecosystem components we may use:
+- Phoenix + Plug: HTTP APIs and web runtime.
+- Phoenix LiveView: interactive UI surfaces without heavy frontend JS.
+- Phoenix PubSub + Presence: realtime events, channels, and multi-client state.
+- Ecto: data access, migrations, validation, and multi-database support.
+- SQLite/Postgres: persistence options depending on deployment footprint.
+- Oban: durable background jobs and workflows.
+- Broadway: backpressure-aware data ingestion pipelines.
+- Nx/Axon + Explorer: numerical computing, model execution, and dataframes.
+- Bumblebee: HuggingFace model integration on top of Nx.
+- Livebook: reproducible notebooks for experiments, evals, and training recipes.
+- Telemetry + OpenTelemetry: metrics, traces, and performance instrumentation.
+- Finch/Tesla: HTTP clients for connectors and integrations.
+- Release tooling (mix releases): repeatable, self-contained deployment artifacts.
+
 ## Key capabilities
 - Project scaffolding for data, configs, tests, and UI surfaces.
 - Data connectors for files, repos, and URLs.
