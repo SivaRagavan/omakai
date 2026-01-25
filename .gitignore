@@ -1,0 +1,26 @@
+# Elixir / Erlang
+/_build/
+/deps/
+/cover/
+/doc/
+/.fetch
+erl_crash.dump
+*.ez
+
+# Elixir language server / tooling
+.elixir_ls/
+.dialyzer_ignore.exs
+.dialyzer.plt
+.dialyzer.plt.hash
+
+# Mix artifacts
+mix.lock
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
