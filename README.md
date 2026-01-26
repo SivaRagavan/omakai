@@ -3,36 +3,28 @@
 <p align="center"><a href="https://exlang.org">exlang.org</a></p>
 
 ## What is Exlang
-Exlang is an opinionated, full-stack framework that helps developers build and launch language models without having to wire up a training pipeline, inference infrastructure, or an app experience manually.
+Exlang is an opinionated, full-stack framework that helps developers build language models without having to wire up a training pipeline, inference infrastructure, or an app experience manually.
 
 ## What is an Exlang Model?
-An Exlang Model is the product: a shippable, versioned, runnable release of intelligence that you can run locally or deploy.
+An Exlang Model is a locally trained language model that ships with a completely customizable chat experience, ready to run locally or deploy.
 
 It typically includes:
-- Model artifact(s): weights and/or adapters, plus tokenizer and model metadata.
-- Runtime configuration: defaults, limits, policies, routing, and connectors.
-- Training recipe: data inputs and repeatable build steps for training or fine-tuning.
-- Evaluation suite: datasets, eval tasks, scoring, and pass/fail gates.
-- Runtime processes: the workers/services that load the model and expose it.
-- Chat definition: customizable, templatizable multimodal chat (text + voice) across channels.
-- Release metadata: versioning, checksums, and provenance for reproducible builds.
-
-## Manifesto
-- **Model over app**: ship intelligence, not just an interface.
-- **Conventions over glue**: strong defaults beat hand-rolled pipelines.
-- **Exploration over docking**: prioritize the horizon over comfort.
-- **Pirate over navy**: stay independent, neutral, and platform-agnostic.
-- **Speed over spaghetti**: ship experiments, not spaghetti code.
+- Training recipe: data sources plus repeatable training/fine-tuning steps.
+- Evaluation suite: datasets, tasks, scoring, and gates.
+- Model artifacts: weights/adapters, tokenizer, and model metadata.
+- Configuration: defaults, limits, policies, routing, and connectors.
+- Runtime: processes/services that load the model and expose it.
+- Chat channels: templatizable multimodal chat (text + voice).
 
 ## Core mission
 Make it dramatically easier to build, evaluate, and release language models as shippable products.
 
-- Reduce the friction from idea → model by removing pipeline setup as a prerequisite.
+- Reduce the friction from idea → shippable model.
 - Make training and evaluation repeatable build steps.
 - Make shipping a model feel as normal as shipping software.
 
 ## Tech stack (Elixir)
-The stack is centered on Elixir/Erlang (OTP) for concurrency, distribution, and reliability.
+The stack is centered on Elixir.
 
 Potential ecosystem components we may use:
 - Phoenix + Plug: HTTP APIs and web runtime.

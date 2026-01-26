@@ -1,43 +1,39 @@
 # Manifesto
 
-## Supervision Is Necessary
-We build AI systems where work happens in supervised units. A supervisor is responsible for monitoring execution, detecting failure modes, and coordinating recovery so the overall system stays useful.
+> Draft — this manifesto will evolve.
 
-The system should:
-- Separate workers (do work) from supervisors (ensure reliability).
-- Detect and contain failures early: timeouts, tool errors, invalid outputs, policy violations, and runaway loops.
-- Recover via retries, fallbacks, decomposition, escalation, or asking the user a targeted question.
-- Prefer graceful degradation and partial progress over brittle all-or-nothing behavior.
-- Keep recovery actions accountable and auditable when it matters.
+## Model over app
+Ship intelligence as the core product, not just an interface.
+Release models as runnable, versioned artifacts that stand on their own.
 
-## Fault Tolerance Is a First-Class Feature
-Failures are normal: tools time out, permissions fail, APIs change, outputs are malformed, context is missing. A capable AI system does not collapse under failure; it contains failure and recovers.
+## Conventions over configuration
+Default paths remove guesswork and wiring.
+A shared project shape keeps teams aligned and pipelines predictable.
 
-The AI should:
-- Assume every step can fail and represent failures as structured, actionable signals.
-- Retry when it makes sense, with backoff and limits.
-- Fall back to alternate strategies when the primary path fails.
-- Prefer partial progress over total failure.
-- Ask targeted questions only when necessary to unblock recovery.
+## Progress over stability
+Favor forward progress, iteration, and discovery.
+Keep building new capabilities while keeping stability in view.
 
-When something goes wrong, the system should correct itself and keep trying to serve the request as much as possible, instead of crashing or returning an unintelligent answer.
+## Speed over ceremony
+Ship experiments fast with tight feedback loops.
+Keep processes lightweight so iteration stays cheap and clean.
 
-## Concurrency Is Not an Afterthought
-We build AI systems that are concurrent by design. Concurrency is not an optimization layer added later; it is the default way work happens.
+## Pirate over navy
+Stay independent, neutral, and platform-agnostic.
+Build for portability and optionality across ecosystems.
 
-The AI should:
-- Decompose work into independent units and run them in parallel whenever possible.
-- Treat a request as a graph of tasks (a DAG), not a single linear chain.
-- Join partial results into a coherent answer without blocking on unrelated work.
-- Serve multiple user requests concurrently without one session starving others.
+## Supervision over autonomy
+Work happens in supervised units with explicit oversight.
+Failures must be detected, contained, and recoverable.
 
-This implies a runtime and architecture that favor isolation, message passing, explicit timeouts/cancellation, and composable workers over a single monolithic loop.
+## Fault tolerance over perfection
+Assume every step can fail and handle it explicitly.
+Prefer retries, fallbacks, and partial progress over all-or-nothing outcomes.
 
-## Right-Sized Intelligence
-We use the smallest model that can do the job reliably, and we escalate to larger models only when necessary. This is not just about cost; it is an architectural choice that improves throughput, latency, and resilience.
+## Concurrency over serialization
+Decompose work into independent tasks that run in parallel.
+Join results without blocking on unrelated work.
 
-This means:
-- Prefer SLMs for routine, high-volume tasks like routing, extraction, summarization of small contexts, planning sub-steps, and shaping structured outputs.
-- Use parallel SLM workers to power a concurrency-first design.
-- Use SLMs as checkers/validators to catch mistakes early and trigger retries or alternate strategies.
-- Fall back to SLMs when larger models are unavailable, degraded, or too slow, while still returning the best possible partial result.
+## Right-sized intelligence over maximum scale
+Use the smallest model that reliably solves the task.
+Escalate only when necessary to protect latency and cost.
