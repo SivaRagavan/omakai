@@ -10,6 +10,10 @@ Release models as runnable, versioned artifacts that stand on their own.
 Default paths remove guesswork and wiring.
 A shared project shape keeps teams aligned and pipelines predictable.
 
+## Declarative prompting over imperative prompting
+Describe outcomes and constraints, not step-by-step instructions.
+Keep prompts stable and reusable across tasks and contexts.
+
 ## Progress over stability
 Favor forward progress, iteration, and discovery.
 Keep building new capabilities while keeping stability in view.
