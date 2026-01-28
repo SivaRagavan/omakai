@@ -38,4 +38,4 @@ jobs:
     - name: Run tests
       run: mix test
     - name: Publish
-      run: mix hex.publish --yes
+      run: HEX_API_KEY=${{ env.HEX_API_KEY }} mix hex.publish --yes
