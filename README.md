@@ -1,18 +1,18 @@
-<h1 align="center">Exlang</h1>
-<p align="center">Opinionated, end-to-end framework for shipping language models.</p>
-<p align="center"><a href="https://exlang.org">exlang.org</a></p>
+<h1 align="center">Tunedmodel</h1>
+<p align="center">Opinionated, end-to-end framework for shipping fine-tuned language models.</p>
+<p align="center"><a href="https://github.com/tunedmodel/tunedmodel">github.com/tunedmodel/tunedmodel</a></p>
 <p align="center">
-  <a href="https://github.com/sivaragavan/exlang"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sivaragavan/exlang?style=social"></a>
-  <a href="https://hex.pm/packages/exlang"><img alt="Hex version" src="https://img.shields.io/hexpm/v/exlang.svg?style=flat-square"></a>
-  <a href="https://hexdocs.pm/exlang/0.1.0/"><img alt="HexDocs" src="https://img.shields.io/badge/hexdocs-docs-8A2BE2?style=flat-square"></a>
+  <a href="https://github.com/tunedmodel/tunedmodel"><img alt="GitHub stars" src="https://img.shields.io/github/stars/tunedmodel/tunedmodel?style=social"></a>
+  <a href="https://hex.pm/packages/tunedmodel"><img alt="Hex version" src="https://img.shields.io/hexpm/v/tunedmodel.svg?style=flat-square"></a>
+  <a href="https://hexdocs.pm/tunedmodel/0.1.0/"><img alt="HexDocs" src="https://img.shields.io/badge/hexdocs-docs-8A2BE2?style=flat-square"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?style=flat-square"></a>
 </p>
 
-## What is Exlang
-Exlang is an opinionated, full-stack framework that helps developers build language models without having to wire up a training pipeline, inference infrastructure, or an app experience manually.
+## What is Tunedmodel
+Tunedmodel is an opinionated, full-stack framework that helps developers build language models without having to wire up a training pipeline, inference infrastructure, or an app experience manually.
 
-## What is an Exlang Model?
-An Exlang Model is a locally trained language model that ships with a completely customizable chat experience, ready to run locally or deploy.
+## What is a Tunedmodel Model?
+A Tunedmodel Model is a locally trained language model that ships with a completely customizable chat experience, ready to run locally or deploy.
 
 It typically includes:
 - Training recipe: data sources plus repeatable training/fine-tuning steps.
@@ -51,10 +51,10 @@ Potential ecosystem components we may use:
 - A shared project shape so teams can develop and use their own models without setting up the pipeline from scratch.
 - Data connectors for files, repos, and URLs.
 - Training recipes that produce repeatable release bundles.
-- Built-in testing via `exlang test` to run evals and gate releases.
+- Built-in testing via `tunedmodel test` to run evals and gate releases.
 - Customizable, templatizable multimodal chat (text + voice).
 - Skill packs for common capabilities.
-- Built-in coding assistant via `exlang code`.
+- Built-in coding assistant via `tunedmodel code`.
 - Release bundles with profiles and checksums.
 
 ## Proposed features
@@ -62,12 +62,12 @@ Potential ecosystem components we may use:
 - Pipeline to fine-tune `gpt-oss-20b` end-to-end (data → training → evals → release bundle).
 
 ## Typical workflow
-- Run `exlang new` to scaffold a project through a wizard that sets AI parameters (name, languages, knowledge bases, tools, and chat/voice format).
-- Use `exlang code` as the default way to build the AI with a coding agent.
+- Run `tunedmodel new` to scaffold a project through a wizard that sets AI parameters (name, languages, knowledge bases, tools, and chat/voice format).
+- Use `tunedmodel code` as the default way to build the AI with a coding agent.
 - Add data through connectors.
 - Enable skill packs.
-- Run `exlang build` to build a local release bundle.
-- Run `exlang start` to start the AI runtime.
+- Run `tunedmodel build` to build a local release bundle.
+- Run `tunedmodel start` to start the AI runtime.
 - Customize the chat experience and ship the release bundle.
 
 ## Who it’s for
@@ -76,16 +76,16 @@ Potential ecosystem components we may use:
 - Researchers who want to run experiments faster.
 
 ## Installation
-If/when Exlang is published to Hex, the package can be installed by adding `exlang` to your list of dependencies in `mix.exs`:
+If/when Tunedmodel is published to Hex, the package can be installed by adding `tunedmodel` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:exlang, "~> 0.1.0"}
+    {:tunedmodel, "~> 0.1.0"}
   ]
 end
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc) and published on [HexDocs](https://hexdocs.pm).
 
-HexDocs (v0.1.0): https://hexdocs.pm/exlang/0.1.0/
+HexDocs (v0.1.0): https://hexdocs.pm/tunedmodel/0.1.0/

@@ -1,17 +1,17 @@
-defmodule Exlang.MixProject do
+defmodule Tunedmodel.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :exlang,
+      app: :tunedmodel,
       version: "0.1.0",
       elixir: "~> 1.19",
       start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
       deps: deps(),
-      name: "Exlang",
-      source_url: "https://github.com/sivaragavan/exlang"
+      name: "Tunedmodel",
+      source_url: "https://github.com/tunedmodel/tunedmodel"
     ]
   end
 
@@ -30,7 +30,7 @@ defmodule Exlang.MixProject do
   end
 
   defp description() do
-    "Opinionated, end-to-end framework for shipping language models."
+    "Opinionated, end-to-end framework for shipping fine-tuned language models."
   end
 
   defp package do
@@ -38,7 +38,7 @@ defmodule Exlang.MixProject do
       licenses: ["MIT"],
       files: ~w(lib mix.exs README.md LICENSE),
       links: %{
-        "GitHub" => "https://github.com/sivaragavan/exlang"
+        "GitHub" => "https://github.com/tunedmodel/tunedmodel"
       }
     ]
   end

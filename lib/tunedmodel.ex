@@ -1,6 +1,6 @@
-defmodule Exlang do
+defmodule Tunedmodel do
   @moduledoc """
-  Documentation for `Exlang`.
+  Documentation for `Tunedmodel`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Exlang do
 
   ## Examples
 
-      iex> Exlang.hello()
+      iex> Tunedmodel.hello()
       :world
 
   """
