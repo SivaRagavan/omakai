@@ -68,3 +68,18 @@ Potential ecosystem components we may use:
 - Builders shipping local-first models end-to-end.
 - Engineers who want to move fast and ship models quickly.
 - Researchers who want to run experiments faster.
+
+## Installation
+If/when Exlang is published to Hex, the package can be installed by adding `exlang` to your list of dependencies in `mix.exs`:
+
+```elixir
+def deps do
+  [
+    {:exlang, "~> 0.1.0"}
+  ]
+end
+```
+
+Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc) and published on [HexDocs](https://hexdocs.pm).
+
+HexDocs (v0.1.0): https://hexdocs.pm/exlang/0.1.0/
