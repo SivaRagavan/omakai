@@ -1,10 +1,10 @@
 <h1 align="center">Tunedmodel</h1>
 <p align="center">Opinionated, end-to-end framework for shipping fine-tuned language models.</p>
-<p align="center"><a href="https://github.com/tunedmodel/tunedmodel">github.com/tunedmodel/tunedmodel</a></p>
+<p align="center"><a href="https://tunedmodel.com">tunedmodel.com</a></p>
 <p align="center">
   <a href="https://github.com/tunedmodel/tunedmodel"><img alt="GitHub stars" src="https://img.shields.io/github/stars/tunedmodel/tunedmodel?style=social"></a>
   <a href="https://hex.pm/packages/tunedmodel"><img alt="Hex version" src="https://img.shields.io/hexpm/v/tunedmodel.svg?style=flat-square"></a>
-  <a href="https://hexdocs.pm/tunedmodel/0.1.0/"><img alt="HexDocs" src="https://img.shields.io/badge/hexdocs-docs-8A2BE2?style=flat-square"></a>
+  <a href="https://hexdocs.pm/tunedmodel/"><img alt="HexDocs" src="https://img.shields.io/badge/hexdocs-docs-8A2BE2?style=flat-square"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?style=flat-square"></a>
 </p>
 
@@ -55,9 +55,9 @@ If/when Tunedmodel is published to Hex, install by adding `tunedmodel` to `mix.e
 ```elixir
 def deps do
   [
-    {:tunedmodel, "~> 0.1.0"}
+    {:tunedmodel, "~> 0.1.1"}
   ]
 end
 ```
 
-HexDocs (v0.1.0): https://hexdocs.pm/tunedmodel/0.1.0/
+HexDocs: https://hexdocs.pm/tunedmodel/
