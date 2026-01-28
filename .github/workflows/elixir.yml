@@ -48,5 +48,5 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           HEX_API_KEY: ${{ secrets.HEX_API_KEY }}
-          MIX_ENV: prod
+          MIX_ENV: dev
         run: mix hex.publish --yes
