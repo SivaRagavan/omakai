@@ -51,6 +51,10 @@ Potential ecosystem components we may use:
 - Built-in coding assistant via `exlang code`.
 - Release bundles with profiles and checksums.
 
+## Proposed features
+- Agentic reasoning (planning + tool use loops).
+- Pipeline to fine-tune `gpt-oss-20b` end-to-end (data → training → evals → release bundle).
+
 ## Typical workflow
 - Run `exlang new` to scaffold a project through a wizard that sets AI parameters (name, languages, knowledge bases, tools, and chat/voice format).
 - Use `exlang code` as the default way to build the AI with a coding agent.
