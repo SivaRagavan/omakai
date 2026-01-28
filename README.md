@@ -1,6 +1,12 @@
 <h1 align="center">Exlang</h1>
 <p align="center">Opinionated, end-to-end framework for shipping language models.</p>
 <p align="center"><a href="https://exlang.org">exlang.org</a></p>
+<p align="center">
+  <a href="https://github.com/sivaragavan/exlang"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sivaragavan/exlang?style=social"></a>
+  <a href="https://hex.pm/packages/exlang"><img alt="Hex version" src="https://img.shields.io/hexpm/v/exlang.svg?style=flat-square"></a>
+  <a href="https://hexdocs.pm/exlang/0.1.0/"><img alt="HexDocs" src="https://img.shields.io/badge/hexdocs-docs-8A2BE2?style=flat-square"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?style=flat-square"></a>
+</p>
 
 ## What is Exlang
 Exlang is an opinionated, full-stack framework that helps developers build language models without having to wire up a training pipeline, inference infrastructure, or an app experience manually.
